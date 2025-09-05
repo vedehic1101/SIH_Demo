@@ -265,10 +265,10 @@ const Dashboard: React.FC = () => {
                 <div className="p-6 space-y-3">
                   <button 
                     onClick={() => setShowResumeAnalysis(true)}
-                    className="w-full glass-button text-sm py-3"
+                    className="w-full glass-button text-lg py-4 animate-pulse-glow"
                   >
-                    <Upload className="h-4 w-4 mr-2" />
-                    Upload Resume & Get Matches
+                    <Upload className="h-5 w-5 mr-2" />
+                    🚀 Upload Resume & Get AI Matches
                   </button>
                   <button className="w-full glass-button-secondary text-sm py-3">
                     <Eye className="h-4 w-4 mr-2" />

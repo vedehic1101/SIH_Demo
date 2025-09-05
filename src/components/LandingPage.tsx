@@ -136,11 +136,15 @@ const LandingPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <button 
-              onClick={() => setShowResumeAnalysis(true)}
+              onClick={() => {
+                // Check if user is signed in (for demo purposes, we'll assume they're not)
+                // In a real app, you'd check authentication state
+                window.location.href = '/signup';
+              }}
               className="glass-button text-lg px-8 py-4 animate-pulse-glow"
             >
               <Upload className="mr-3 h-6 w-6" />
-              Upload Resume & Get Matched
+              🚀 Upload Resume & Get AI Matches
             </button>
             <Link to="/signup" className="glass-button-secondary text-lg px-8 py-4">
               <Play className="mr-3 h-6 w-6" />
@@ -249,11 +253,14 @@ const LandingPage: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button 
-                onClick={() => setShowResumeAnalysis(true)}
+                onClick={() => {
+                  // Check if user is signed in (for demo purposes, we'll assume they're not)
+                  window.location.href = '/signup';
+                }}
                 className="glass-button text-lg px-8 py-4"
               >
                 <Zap className="mr-3 h-6 w-6" />
-                Get Instant Matches
+                🚀 Get Instant AI Matches
               </button>
               <Link to="/signup" className="glass-button-secondary text-lg px-8 py-4">
                 <ArrowRight className="mr-3 h-6 w-6" />
@@ -320,9 +327,6 @@ const LandingPage: React.FC = () => {
       </footer>
 
       {/* Resume Analysis Modal */}
-      {showResumeAnalysis && (
-        <ResumeAnalysis onClose={() => setShowResumeAnalysis(false)} />
-      )}
     </div>
   );
 };
