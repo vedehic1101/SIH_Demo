@@ -23,7 +23,9 @@ import {
   Code,
   Database,
   Globe,
-  Briefcase
+  Briefcase,
+  User,
+  ArrowLeft
 } from 'lucide-react';
 
 interface ResumeAnalysisProps {
