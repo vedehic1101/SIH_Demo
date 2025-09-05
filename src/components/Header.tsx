@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Bell, User, Search } from 'lucide-react';
+import { Menu, Bell, User, Search, Award } from 'lucide-react';
 
 interface HeaderProps {
   onMenuToggle: () => void;
